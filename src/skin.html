@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Keywords" content="[##_meta_http_equiv_keywords_##]" />
+  <link rel="canonical" href="https://rottk.tistory.com" />
+  <!-- Google Analysis 사용을 위함 -->
+  <meta name="google-site-verification" content="VFloFp5sXe7fNMaiM2E26fwn9kyI02rYIQcgCvAJXbQ" />
+  <meta name="google-site-verification" content="jz999STsfJ_LLiLJCsXGsKzz4GrUTXY66_2jRyXEN9o" />
+  <meta name="naver-site-verification" content="872a655183247f33457b862cf76de3f350603c97" />
+  <title>[##_page_title_##] :: [##_title_##]</title>
+
+  <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##] : comments" href="[##_comment_rss_url_##]" />
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##] : trackbacks"
+    href="[##_trackback_rss_url_##]" />
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##] : comments + trackbacks"
+    href="[##_response_rss_url_##]" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- 코드 하이라이트-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.css" rel="stylesheet" />
+
+  <!--[if lt IE 9]>
+	<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+  <!--[if gte IE 9]><!-->
+  <!-- <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Added By Song @ 20.02.19 for Clipboard Copy -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+  <!--<![endif]-->
+
+  <!-- 티스토리 카테고리 매개변수 지우기 -->
+  <script type="text/javascript">
+    //브라우저가 pushState가 지원되지 않는다면 사용하지 않도록 설정
+    if (typeof (history.pushState) == 'function') {
+      //현재 주소를 가져온다.
+      var CatagoryURL = location.href;
+
+      //게시글 중 매개변수 category가 붙으면 없애버린다.
+      CatagoryURL = CatagoryURL.replace(/\?category=([0-9]+)/ig, '');
+
+      //페이지 새로 고침 없이 갱신
+      history.pushState(null, null, CatagoryURL);
+    }		
+  </script>
+
+  <!-- Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6485759996905115",
+      enable_page_level_ads: true
+    });
+  </script>
+
+</head>
+
+<body>
+  <!-- 코드 하이라이트-->
+  <script src="./images/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-bash.min.js"></script>
+  <s_t3>
+    <div class="container my-5 d-none d-sm-block">
+      <h2>
+        <a class="link-unstyled" href="[##_blog_link_##]">[##_title_##]</a>
+      </h2>
+    </div>
+
+    <!-- to Top 버튼-->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-sm back-to-top" role="button"
+      title="Click to return on the top page" style="display:none" data-toggle="tooltip" data-placement="left"><i
+        class="fas fa-angle-up"></i><br>Top</a>
+
+    <!-- 제목 바-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container clearfix">
+
+        <!-- collapse 토글 바 -->
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="[##_blog_link_##]"><i class="fas fa-home"></i>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/notice"><i class="fas fa-bullhorn"></i>&nbsp;Notice</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-sign-in-alt"></i>&nbsp;Administrator
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="[##_owner_url_##]/entry/post"><i class="fas fa-edit"></i>&nbsp;Write an
+                  article</a>
+                <a class="dropdown-item" href="[##_owner_url_##]"><i class="fas fa-cog"></i>&nbsp;Manage site</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="article-base col-xl-9 col-lg-8 col-sm-12">
+          <s_notice_rep>
+            <s_index_article_rep>
+              <div class="article-card card mb-3 p-3">
+                <h5 class="mt-0">
+                  <a class="link-unstyled" href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                </h5>
+                <div class="clearfix">
+                  <a class="float-left" href="/notice">Notice</a>
+                  <p class="float-right text-muted">[##_notice_rep_date_##]</p>
+                </div>
+                <div class="clearfix">
+                  <p class="card-text">[##_notice_rep_summary_##]</p>
+                  <a href="[##_notice_rep_link_##]" class="btn btn-primary">Read more →</a>
+                </div>
+              </div>
+            </s_index_article_rep>
+
+            <s_permalink_article_rep>
+              <div class="article-content card p-4">
+                <h3 class="mt-0">
+                  <a class="link-unstyled" href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                </h3>
+                <div class="clearfix">
+                  <a class="float-left" href="/notice">Notice</a>
+                  <p class="float-right text-muted">[##_notice_rep_date_##]</p>
+                </div>
+                <div class="mt-3">
+                  [##_notice_rep_desc_##]
+                </div>
+                <div class="row">
+                  <div class="col-8">
+                    <s_tag_label>
+                      <div class="tag-container">
+                        [##_tag_label_rep_##]
+                      </div>
+                    </s_tag_label>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a id="reportAbuse">Report abuse</a>
+                  </div>
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+                  var disqus_config = function () {
+                    this.page.url = "http://rottk.tistroy.com/[##_notice_rep_link_##]";
+                    // this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+
+                  (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://http-rottk-tistory-com.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                    powered by Disqus.</a></noscript>
+              </div>
+            </s_permalink_article_rep>
+          </s_notice_rep>
+
+          <s_article_rep>
+            <s_index_article_rep>
+              <div class="article-card card mb-3 p-3">
+                <h5 class="mt-0">
+                  <a class="link-unstyled" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                </h5>
+                <div class="clearfix">
+                  <a class="float-left" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                  <p class="float-right text-muted">[##_article_rep_date_##]</p>
+                </div>
+                <div class="clearfix">
+                  <s_article_rep_thumbnail>
+                    <a href="[##_article_rep_link_##]">
+                      <img class="mr-3 mt-1 img-responsive float-left" style="width: 148px; height: 120px"
+                        src="//i1.daumcdn.net/thumb/C148x148/?fname=[##_article_rep_thumbnail_raw_url_##]">
+                    </a>
+                  </s_article_rep_thumbnail>
+                  <p class="card-text">[##_article_rep_summary_##]
+                    <a href="[##_article_rep_link_##]" class="btn btn-primary btn-sm">Read more →</a>
+                  </p>
+
+                </div>
+              </div>
+            </s_index_article_rep>
+
+            <!-- 글 -->
+            <s_permalink_article_rep>
+              <div class="article-content card p-4">
+                <h3 class="mt-0">
+                  <a class="link-unstyled" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                </h3>
+                <p class="lead">by [##_blogger_##]</p>
+                <hr>
+                <div class="clearfix">
+                  <a class="float-left" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                  <p class="float-right text-muted">[##_article_rep_date_##]</p>
+                </div>
+                <s_ad_div>
+                  <div class="clearfix">
+                    <div class="btn-group float-right" role="group" aria-label="Basic example">
+                      <a href="[##_s_ad_m_link_##]" class="btn btn-sm btn-light">Edit</a>
+                      <a href="#" onclick="[##_s_ad_s2_onclick_##]" class="btn btn-sm btn-light">Publish</a>
+                      <a href="#" onclick="[##_s_ad_d_onclick_##]" class="btn btn-sm btn-light">Delete</a>
+                    </div>
+                  </div>
+                </s_ad_div>
+                <div class="mt-4">
+                  [##_article_rep_desc_##]
+                </div>
+
+                <!--- 수정중
+							<s_article_related>
+								<div class="area_related">
+									<strong class="tit_related">[##_article_rep_category_##] 관련글 </strong>
+									<ul class="list_related">
+										<s_article_related_rep>
+											<li class="[##_article_related_rep_type_##]">
+												<a href="[##_article_related_rep_link_##]" class="link_related">
+													
+													<s_article_related_rep_thumbnail>
+														<span class="thumb_related">
+															<img src="[##_article_related_rep_thumbnail_link_##]" class="img_related" alt="">
+														</span>
+													</s_article_related_rep_thumbnail>
+													
+													<span class="txt_related">[##_article_related_rep_title_##]</span>
+													<span class="date_related">[##_article_related_rep_date_##]</span>
+													<span class="frame_related"></span>
+												</a>
+											</li>
+										</s_article_related_rep>
+									</ul>
+									<a href="[##_article_rep_category_link_##]" class="link_more">더보기</a>
+								</div>
+							</s_article_related>
+							-->
+
+                <div class="row">
+                  <div class="col-8">
+                    <s_tag_label>
+                      <div class="tag-container">
+                        [##_tag_label_rep_##]
+                      </div>
+                    </s_tag_label>
+                  </div>
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+                  var disqus_config = function () {
+                    this.page.url = 'http://rottk.tistory.com/[##_article_rep_link_##]';
+                    this.page.identifier = '[##_article_rep_id_##]';
+                  };
+
+                  (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://http-rottk-tistory-com.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                    powered by Disqus.</a></noscript>
+              </div>
+            </s_permalink_article_rep>
+          </s_article_rep>
+
+          <s_paging>
+            <div class="mb-3 p-3">
+              <nav class="mt-3">
+                <ul class="pagination pagination-sm justify-content-center">
+                  <li class="page-item [##_no_more_prev_##]">
+                    <a class="page-link" [##_prev_page_##] tabindex="-1">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <s_paging_rep>
+                    <li class="page-item">
+                      <a class="page-link" [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                    </li>
+                  </s_paging_rep>
+                  <li class="page-item [##_no_more_next_##]">
+                    <a class="page-link" [##_next_page_##]>
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </s_paging>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-sm-12">
+
+          <s_search>
+            <form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
+              <div class="input-group">
+                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="form-control"
+                  placeholder="Search for">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-secondary" type="button">Search</button>
+                </span>
+              </div>
+            </form>
+          </s_search>
+
+          <div class="card mt-3">
+            <div class="card-header">
+              <i class="fas fa-folder-open"></i>&nbsp;Category
+            </div>
+            <div class="list-group">
+              [##_category_list_##]
+            </div>
+          </div>
+
+          <s_sidebar>
+
+            <s_sidebar_element>
+              <s_rct_notice>
+                <div class="card mt-3">
+                  <div class="card-header">
+                    <i class="fas fa-bullhorn"></i>&nbsp;Notice
+                  </div>
+                  <div class="card-body">
+                    <s_rct_notice_rep>
+                      <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                      <br />
+                    </s_rct_notice_rep>
+                  </div>
+                </div>
+              </s_rct_notice>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+              <div class="card mt-3">
+                <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-to7cn3c9mdeq" data-ad-width="250"
+                  data-ad-height="250"></ins>
+                <!-- <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script> -->
+              </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+              <div class="card mt-3">
+                <div class="card-header">
+                  <i class="fas fa-file-alt"></i>&nbsp;Recent articles
+                </div>
+                <div class="card-body">
+                  <s_rctps_rep>
+                    <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                    <br />
+                  </s_rctps_rep>
+                </div>
+              </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+              <div class="card mt-3">
+                <div class="card-header">
+                  <i class="fas fa-tags"></i>&nbsp;Popular tags
+                </div>
+                <div class="card-body">
+                  <s_random_tags>
+                    <a href="[##_tag_link_##]" class="badge badge-primary">[##_tag_name_##]</a>
+                  </s_random_tags>
+                </div>
+              </div>
+            </s_sidebar_element>
+
+            <s_sidebar_element>
+              <div class="card mt-3">
+                <div class="card-header">
+                  <i class="fas fa-link"></i>&nbsp;Links
+                </div>
+                <div class="card-body">
+                  <s_link_rep>
+                    <a href="[##_link_url_##]" onclick="window.open(this.href); return false">[##_link_site_##]</a>
+                    <br />
+                  </s_link_rep>
+                </div>
+              </div>
+            </s_sidebar_element>
+          </s_sidebar>
+          <s_sidebar>
+            <s_sidebar_element>
+              <div class="card mt-3">
+                <div class="card-header">
+                  <i class="fas fa-users"></i>&nbsp;Visit logs
+                </div>
+                <div class="card-body text-center">
+                  <div class="card-body text-center">
+                    <p class="card-text">Total: [##_count_total_##]<br>Today: [##_count_today_##]&nbsp; Yesterday:
+                      [##_count_yesterday_##]&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+            </s_sidebar_element>
+          </s_sidebar>
+        </div>
+      </div>
+    </div>
+
+    <footer class="blog-footer mt-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright ©
+          <a href="mailto:yungjoong.song@gmail.com">YungJoong Song</a> 2018-2020</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script>
+    <script src="./images/script.js"></script>
+    <script id="dsq-count-scr" src="//http-rottk-tistory-com.disqus.com/count.js" async></script>
+  </s_t3>
+  <!-- 애드블록 사용율 통계 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"
+    integrity="sha256-uaQssnQX0rh7jVmDZVVmcxo4CJ1eMHNenpMQCOpZxjQ=" crossorigin="anonymous"></script>
+  <script>
+    // Function called if AdBlock is not detected
+    function adBlockNotDetected() {
+      console.log('AdBlock is not enabled');
+      try {
+        ga('send', 'event', 'adblock', 'disabled');
+      } catch (e) { console.error(e) }
+    }
+    // Function called if AdBlock is detected
+    function adBlockDetected() {
+      console.log('AdBlock is enabled');
+      try {
+        ga('send', 'event', 'adblock', 'enabled');
+      } catch (e) { console.error(e) }
+    }
+
+    // Recommended audit because AdBlock lock the file 'blockadblock.js' 
+    // If the file is not called, the variable does not exist 'blockAdBlock'
+    // This means that AdBlock is present
+    if (typeof blockAdBlock === 'undefined') {
+      adBlockDetected();
+    } else {
+      blockAdBlock.onDetected(adBlockDetected);
+      blockAdBlock.onNotDetected(adBlockNotDetected);
+      // and|or
+      blockAdBlock.on(true, adBlockDetected);
+      blockAdBlock.on(false, adBlockNotDetected);
+      // and|or
+      blockAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
+    }
+  </script>
+
+</body>
+
+</html>
