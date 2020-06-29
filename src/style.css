@@ -13,7 +13,7 @@
   display: none
 }
 
- .blog-footer {
+.blog-footer {
   padding: 2.5rem 0;
   color: #999;
   border-top: .05rem solid #e5e5e5;
@@ -32,7 +32,7 @@
     bottom: 20px;
     right: 20px;
     display:none;
-	  z-index: 99; /* Make sure it does not overlap */
+	z-index: 99; /* Make sure it does not overlap */
 }
 
 [data-toggle="collapse"].collapsed .fa:before {   
@@ -43,10 +43,10 @@
   content: "\f13a";
 }
 
+/* Begin Added By Song @ 20.02.19, for CopyClipBoard */
 pre {
-	/* Begin Added By Song @ 20.02.19, for CopyClipBoard */
 	position: relative;
-  overflow: visible;
+    overflow: visible;
 	/* End */
 	background-color: #eee;
 	display: block;
@@ -73,7 +73,7 @@ pre .copy-btn {
     top: 4px
 }
 
-pre:hover .copy-btn,pre .copy-btn:focus {
+pre:hover .copy-btn, pre .copy-btn:focus {
     opacity: 1
 }
 
@@ -1529,14 +1529,14 @@ pre[class*="language-"] {
 
 /*200115 블로그 불펌방지 및 특정영역 허용*/
 code {
--webkit-user-select: text !important;
--moz-user-select: text !important;
--ms-user-select: text !important;
-user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
 }
 body {
--webkit-user-select: none !important;
--moz-user-select: -moz-none !important;
--ms-user-select: none !important;
-user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
 }

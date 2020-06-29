@@ -302,21 +302,33 @@
             <div class="mb-3 p-3">
               <nav class="mt-3">
                 <ul class="pagination pagination-sm justify-content-center">
-                  <li class="page-item [##_no_more_prev_##]">
+                  <li class="page-item [##_no_more_prev_##] d-block d-sm-none">
+                    <a class="page-link" [##_prev_page_##] tabindex="-1">
+                      <span aria-hidden="true">&laquo;이전</span>
+                      <span class="sr-only">이전</span>
+                    </a>
+                  </li>
+                  <li class="page-item [##_no_more_prev_##] d-none d-sm-block">
                     <a class="page-link" [##_prev_page_##] tabindex="-1">
                       <span aria-hidden="true">&laquo;</span>
-                      <span class="sr-only">Previous</span>
+                      <span class="sr-only">이전</span>
                     </a>
                   </li>
                   <s_paging_rep>
-                    <li class="page-item">
+                    <li class="page-item d-none d-sm-block">
                       <a class="page-link" [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
                     </li>
                   </s_paging_rep>
-                  <li class="page-item [##_no_more_next_##]">
+                  <li class="page-item [##_no_more_next_##] d-none d-sm-block">
                     <a class="page-link" [##_next_page_##]>
                       <span aria-hidden="true">&raquo;</span>
-                      <span class="sr-only">Next</span>
+                      <span class="sr-only">다음</span>
+                    </a>
+                  </li>
+                  <li class="page-item [##_no_more_next_##] d-block d-sm-none">
+                    <a class="page-link" [##_next_page_##]>
+                      <span aria-hidden="true">다음&raquo;</span>
+                      <span class="sr-only">다음</span>
                     </a>
                   </li>
                 </ul>
