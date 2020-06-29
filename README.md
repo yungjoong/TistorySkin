@@ -1,4 +1,4 @@
-# tistory-essence-skin Modified
+# tistory-essence-skin (Modified)
 Bootstrap 기반 반응형 티스토리 스킨
 
 # 소개
