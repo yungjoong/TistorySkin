@@ -4,7 +4,7 @@ var categories = [];
 var totalNumberOfPosts = $("a.link_tit > span").text().match(/\(([^)]+)\)/)[1];
 categories.push({ "title": "전체보기", "link": "/category", "posts": totalNumberOfPosts, "type": "main", "child": [] });
 
-// 카테고리 구하기
+// 카테고리 내용 구하기
 /* Befor
 $("ul.category_list > li > a").each(function (index) {
     var category = $.trim($(this).contents().filter(function () { return this.nodeType == 3; })[0].nodeValue);
@@ -48,7 +48,7 @@ $.each(categories, function (i) {
         .attr('class', 'list-group-item list-group-item-action d-flex justify-content-between align-items-center')
         .appendTo(listGroup)
 
-    // 추가	
+    // 메인 카테고리 Collapse 컨트롤용 ICON
     if (categories[i].child.length != 0) {
         var icon = $("<i/>")
             .attr('class', "fa")
@@ -101,8 +101,8 @@ $.each(categories, function (i) {
 });
 
 // 기존의 메뉴 교체
-$(".tt_category").remove();
-
+// $(".tt_category").remove();
+$(".catetory_list").addClass('list-group').removeClass('catetory_list');
 // 태그
 if ($("div.tag-container > a") != null) {
     var tags = [];

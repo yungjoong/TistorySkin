@@ -35,12 +35,13 @@
 	z-index: 99; /* Make sure it does not overlap */
 }
 
+/* Icon using at Category, from Font Awesome */
 [data-toggle="collapse"].collapsed .fa:before {   
-  content: "\f139";
+  content: "\f067";
 }
 
 [data-toggle="collapse"] .fa:before {
-  content: "\f13a";
+  content: "\f068";
 }
 
 /* Begin Added By Song @ 20.02.19, for CopyClipBoard */

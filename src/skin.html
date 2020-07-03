@@ -75,11 +75,6 @@
 </head>
 
 <body>
-  <!-- 코드 하이라이트-->
-  <script src="./images/prism.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-python.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-bash.min.js"></script>
   <s_t3>
     <div class="container my-5 d-none d-sm-block">
       <h2>
@@ -94,38 +89,40 @@
 
     <!-- 제목 바-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container clearfix">
+      <header>
+        <div class="container clearfix">
 
-        <!-- collapse 토글 바 -->
-        <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- collapse 토글 바 -->
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="[##_blog_link_##]"><i class="fas fa-home"></i>&nbsp;Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/notice"><i class="fas fa-bullhorn"></i>&nbsp;Notice</a>
-            </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="[##_blog_link_##]"><i class="fas fa-home"></i>&nbsp;Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/notice"><i class="fas fa-bullhorn"></i>&nbsp;Notice</a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-sign-in-alt"></i>&nbsp;Administrator
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="[##_owner_url_##]/entry/post"><i class="fas fa-edit"></i>&nbsp;Write an
-                  article</a>
-                <a class="dropdown-item" href="[##_owner_url_##]"><i class="fas fa-cog"></i>&nbsp;Manage site</a>
-              </div>
-            </li>
-          </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-sign-in-alt"></i>&nbsp;Administrator
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="[##_owner_url_##]/entry/post"><i class="fas fa-edit"></i>&nbsp;Write an
+                    article</a>
+                  <a class="dropdown-item" href="[##_owner_url_##]"><i class="fas fa-cog"></i>&nbsp;Manage site</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </header>
     </nav>
 
     <div class="container mt-4">
@@ -356,8 +353,8 @@
               <i class="fas fa-folder-open"></i>&nbsp;Category
             </div>
             <div class="list-group">
-              [##_category_list_##]
             </div>
+            [##_category_list_##]
           </div>
 
           <s_sidebar>
@@ -452,18 +449,22 @@
           <a href="mailto:yungjoong.song@gmail.com">YungJoong Song</a> 2018-2020</p>
       </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script>
-    <script src="./images/script.js"></script>
-    <script id="dsq-count-scr" src="//http-rottk-tistory-com.disqus.com/count.js" async></script>
   </s_t3>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script>
+  <script src="./images/script.js"></script>
+  <script id="dsq-count-scr" src="//http-rottk-tistory-com.disqus.com/count.js" async></script>
+  <!-- 코드 하이라이트-->
+  <script src="./images/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-bash.min.js"></script>
   <!-- 애드블록 사용율 통계 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"
     integrity="sha256-uaQssnQX0rh7jVmDZVVmcxo4CJ1eMHNenpMQCOpZxjQ=" crossorigin="anonymous"></script>
