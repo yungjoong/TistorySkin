@@ -5,7 +5,7 @@ var totalNumberOfPosts = $("a.link_tit > span").text().match(/\(([^)]+)\)/)[1];
 categories.push({ "title": "전체보기", "link": "/category", "posts": totalNumberOfPosts, "type": "main", "child": [] });
 
 // 카테고리 내용 구하기
-/* Befor
+/* Before
 $("ul.category_list > li > a").each(function (index) {
     var category = $.trim($(this).contents().filter(function () { return this.nodeType == 3; })[0].nodeValue);
     var href = $(this).attr('href');
@@ -60,6 +60,7 @@ $.each(categories, function (i) {
         .attr('data-target', "#" + i)	    // ← 추가
         .attr('aria-expanded', 'false')     // ← 추가
         .attr('aria-controls', i)           // ← 추가
+        .attr('class', "collapsed")
         .appendTo(div)                      // ← 추가
         .prepend(icon);		                // ← 추가
 
@@ -75,25 +76,29 @@ $.each(categories, function (i) {
         })
 
     if (categories[i].child.length != 0) {
-        div = $('<div/>')
-            .attr('class', 'collapse show')
+        let div = $('<div/>')
+            .attr('class', 'collapse')
             .attr('id', i)
             .appendTo(listGroup)
 
         // 서브카테고리 추가
         for (var j = 0; j < categories[i].child.length; j++) {
-            var li = $('<a/>')
+            let ul = $('<div/>')
                 .attr('class', 'list-group-item list-group-item-action d-flex justify-content-between align-items-center')
+                .appendTo(div)
+
+            $('<a/>')
+                .attr('class', "mr-auto")
                 .attr('href', categories[i].child[j].link)
                 .attr('id', categories[i].child[j].type)
-                .text(categories[i].child[j].title)
+                .text(categories[i].child[j].title).appendTo(ul);
 
-            $("#" + categories[i].child[j].type).append(li);
+            $("#" + categories[i].child[j].type).append(ul);
 
             $("<span/>")
                 .attr('class', "ml-auto badge badge-primary badge-pill") // ← ml-auto 추가
                 .text(categories[i].child[j].posts)
-                .appendTo(li);
+                .appendTo(ul);
         }
     }
 
@@ -101,8 +106,8 @@ $.each(categories, function (i) {
 });
 
 // 기존의 메뉴 교체
-// $(".tt_category").remove();
-$(".catetory_list").addClass('list-group').removeClass('catetory_list');
+$(".tt_category").remove();
+// $('.category_list').addClass('list-group').removeClass('catetory_list');
 // 태그
 if ($("div.tag-container > a") != null) {
     var tags = [];
