@@ -222,10 +222,12 @@
                 </h3>
                 <p class="lead">by [##_blogger_##]</p>
                 <hr>
-                <div class="clearfix">
-                  <a class="float-left" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
-                  <p class="float-right text-muted">[##_article_rep_date_##]</p>
-                </div>
+                <nav>
+                  <div class="clearfix">
+                    <a class="float-left" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                    <p class="float-right text-muted">[##_article_rep_date_##]</p>
+                  </div>
+                </nav>
                 <s_ad_div>
                   <div class="clearfix">
                     <div class="btn-group float-right" role="group" aria-label="Basic example">
@@ -235,9 +237,11 @@
                     </div>
                   </div>
                 </s_ad_div>
-                <div class="mt-4">
-                  [##_article_rep_desc_##]
-                </div>
+                <article>
+                  <div class="mt-4">
+                    [##_article_rep_desc_##]
+                  </div>
+                </article>
 
                 <!--- 수정중
 							<s_article_related>
@@ -348,82 +352,86 @@
             </form>
           </s_search>
 
-          <div class="card mt-3">
-            <div class="card-header">
-              <i class="fas fa-folder-open"></i>&nbsp;Category
+          <nav>
+            <div class="card mt-3">
+              <div class="card-header">
+                <i class="fas fa-folder-open"></i>&nbsp;Category
+              </div>
+              <div class="list-group">
+              </div>
+              [##_category_list_##]
             </div>
-            <div class="list-group">
-            </div>
-            [##_category_list_##]
-          </div>
+          </nav>
 
-          <s_sidebar>
+          <aside>
+            <s_sidebar>
+              <s_sidebar_element>
+                <s_rct_notice>
+                  <div class="card mt-3">
+                    <div class="card-header">
+                      <i class="fas fa-bullhorn"></i>&nbsp;Notice
+                    </div>
+                    <div class="card-body">
+                      <s_rct_notice_rep>
+                        <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                        <br />
+                      </s_rct_notice_rep>
+                    </div>
+                  </div>
+                </s_rct_notice>
+              </s_sidebar_element>
 
-            <s_sidebar_element>
-              <s_rct_notice>
+              <s_sidebar_element>
+                <div class="card mt-3">
+                  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-to7cn3c9mdeq" data-ad-width="250"
+                    data-ad-height="250"></ins>
+                  <!-- <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script> -->
+                </div>
+              </s_sidebar_element>
+
+              <s_sidebar_element>
                 <div class="card mt-3">
                   <div class="card-header">
-                    <i class="fas fa-bullhorn"></i>&nbsp;Notice
+                    <i class="fas fa-file-alt"></i>&nbsp;Recent articles
                   </div>
                   <div class="card-body">
-                    <s_rct_notice_rep>
-                      <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                    <s_rctps_rep>
+                      <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
                       <br />
-                    </s_rct_notice_rep>
+                    </s_rctps_rep>
                   </div>
                 </div>
-              </s_rct_notice>
-            </s_sidebar_element>
+              </s_sidebar_element>
 
-            <s_sidebar_element>
-              <div class="card mt-3">
-                <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-to7cn3c9mdeq" data-ad-width="250"
-                  data-ad-height="250"></ins>
-                <!-- <script type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script> -->
-              </div>
-            </s_sidebar_element>
+              <s_sidebar_element>
+                <div class="card mt-3">
+                  <div class="card-header">
+                    <i class="fas fa-tags"></i>&nbsp;Popular tags
+                  </div>
+                  <div class="card-body">
+                    <s_random_tags>
+                      <a href="[##_tag_link_##]" class="badge badge-primary">[##_tag_name_##]</a>
+                    </s_random_tags>
+                  </div>
+                </div>
+              </s_sidebar_element>
 
-            <s_sidebar_element>
-              <div class="card mt-3">
-                <div class="card-header">
-                  <i class="fas fa-file-alt"></i>&nbsp;Recent articles
+              <s_sidebar_element>
+                <div class="card mt-3">
+                  <div class="card-header">
+                    <i class="fas fa-link"></i>&nbsp;Links
+                  </div>
+                  <div class="card-body">
+                    <s_link_rep>
+                      <a href="[##_link_url_##]" onclick="window.open(this.href); return false">[##_link_site_##]</a>
+                      <br />
+                    </s_link_rep>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <s_rctps_rep>
-                    <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
-                    <br />
-                  </s_rctps_rep>
-                </div>
-              </div>
-            </s_sidebar_element>
+              </s_sidebar_element>
+            </s_sidebar>
+          </aside>
 
-            <s_sidebar_element>
-              <div class="card mt-3">
-                <div class="card-header">
-                  <i class="fas fa-tags"></i>&nbsp;Popular tags
-                </div>
-                <div class="card-body">
-                  <s_random_tags>
-                    <a href="[##_tag_link_##]" class="badge badge-primary">[##_tag_name_##]</a>
-                  </s_random_tags>
-                </div>
-              </div>
-            </s_sidebar_element>
-
-            <s_sidebar_element>
-              <div class="card mt-3">
-                <div class="card-header">
-                  <i class="fas fa-link"></i>&nbsp;Links
-                </div>
-                <div class="card-body">
-                  <s_link_rep>
-                    <a href="[##_link_url_##]" onclick="window.open(this.href); return false">[##_link_site_##]</a>
-                    <br />
-                  </s_link_rep>
-                </div>
-              </div>
-            </s_sidebar_element>
-          </s_sidebar>
           <s_sidebar>
             <s_sidebar_element>
               <div class="card mt-3">
