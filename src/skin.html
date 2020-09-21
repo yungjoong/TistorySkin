@@ -38,22 +38,26 @@
     <link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
   </noscript>
 
-  <!-- 티스토리 카테고리 매개변수 지우기 -->
-  <script type="text/javascript">
-    //브라우저가 pushState가 지원되지 않는다면 사용하지 않도록 설정
-    if (typeof (history.pushState) == 'function') {
-      //현재 주소를 가져온다.
-      var CatagoryURL = location.href;
-
-      //게시글 중 매개변수 category가 붙으면 없애버린다.
-      CatagoryURL = CatagoryURL.replace(/\?category=([0-9]+)/ig, '');
-
-      //페이지 새로 고침 없이 갱신
-      history.pushState(null, null, CatagoryURL);
-    }		
+  <!-- Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6485759996905115",
+      enable_page_level_ads: true
+    });
   </script>
-
-
+  <script defer src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script defer src="./images/script.js"></script>
+  <!-- Added By Song @ 20.02.19 for Clipboard Copy -->
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script async id="dsq-count-scr" src="//http-rottk-tistory-com.disqus.com/count.js"></script>
 </head>
 
 <body>
@@ -377,13 +381,6 @@
 
                 <s_sidebar_element>
                   <div class="card mt-3">
-                    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-to7cn3c9mdeq" data-ad-width="250"
-                      data-ad-height="250"></ins>
-                  </div>
-                </s_sidebar_element>
-
-                <s_sidebar_element>
-                  <div class="card mt-3">
                     <div class="card-header">
                       <i class="fas fa-file-alt"></i>&nbsp;Recent articles
                     </div>
@@ -455,36 +452,30 @@
     </footer>
   </s_t3>
 
-  <!-- Adsense -->
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-6485759996905115",
-      enable_page_level_ads: true
-    });
+  <!-- 티스토리 카테고리 매개변수 지우기 -->
+  <script type="text/javascript">
+    //브라우저가 pushState가 지원되지 않는다면 사용하지 않도록 설정
+    if (typeof (history.pushState) == 'function') {
+      //현재 주소를 가져온다.
+      var CatagoryURL = location.href;
+
+      //게시글 중 매개변수 category가 붙으면 없애버린다.
+      CatagoryURL = CatagoryURL.replace(/\?category=([0-9]+)/ig, '');
+
+      //페이지 새로 고침 없이 갱신
+      history.pushState(null, null, CatagoryURL);
+    }		
   </script>
-  <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script defer src="./images/script.js"></script>
-  <!-- Added By Song @ 20.02.19 for Clipboard Copy -->
-  <script async src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script async type="text/javascript" src="//t1.daumcdn.net/adfit/static/ad.min.js" async></script>
-  <script async id="dsq-count-scr" src="//http-rottk-tistory-com.disqus.com/count.js" async></script>
+
   <!-- 코드 하이라이트-->
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-core.min.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-python.min.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-bash.min.js"></script>
+  <script src="./images/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-bash.min.js"></script>
   <!-- 애드블록 사용율 통계 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js"
     integrity="sha256-uaQssnQX0rh7jVmDZVVmcxo4CJ1eMHNenpMQCOpZxjQ=" crossorigin="anonymous"></script>
-  <script>
+  <script type="text/javascript">
     // Function called if AdBlock is not detected
     function adBlockNotDetected() {
       console.log('AdBlock is not enabled');

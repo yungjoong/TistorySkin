@@ -57,7 +57,7 @@
                     .html('&nbsp;')
             }
 
-            $('<a/>')	// ← 변경 <a/> -> <li/>
+            $('<a/>')	// 변경 <a/> → <li/>
                 .attr('data-toggle', 'collapse')	// ← 추가
                 .attr('data-target', "#" + i)	    // ← 추가
                 .attr('aria-expanded', 'false')     // ← 추가
@@ -66,7 +66,7 @@
                 .appendTo(div)                      // ← 추가
                 .prepend(icon);		                // ← 추가
 
-            $('<a/>')	// ← 변경 <a/> -> <li/>
+            $('<a/>')	// ← 변경 <a/> → <li/>
                 .attr('class', "mr-auto")
                 .attr('href', categories[i].link)
                 .text(categories[i].title)
